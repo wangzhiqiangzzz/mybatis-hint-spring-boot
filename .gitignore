@@ -10,6 +10,3 @@ target/
 .settings/
 .classpath
 .project
-
-src/test/
-src/main/resources/application-dev.yaml
