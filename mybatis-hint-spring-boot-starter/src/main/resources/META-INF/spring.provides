@@ -1,0 +1,1 @@
+provides: mybatis-hint,mybatis-hint-spring-boot-autoconfigure,mybatis-spring-boot-autoconfigure,mybatis,mybatis-spring

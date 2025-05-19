@@ -1,0 +1,48 @@
+
+server:
+  port: 9000
+  servlet:
+    context-path: /examples-service
+
+logging:
+  hint:
+    level: debug
+
+
+hint:
+  enable: true
+
+spring:
+  application:
+    name: examples-service
+  datasource:
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
+      datasource:
+        master:
+          url: jdbc:mysql://localhost:3306/dev_test
+          username: root
+          password: root
+          driver-class-name: com.mysql.jdbc.Driver
+          type: com.alibaba.druid.pool.DruidDataSource
+          druid:
+            initialSize: 5
+            minIdle: 5
+            max-active: 20
+            maxWait: 60000
+            timeBetweenEvictionRunsMillis: 60000
+            minEvictableIdleTimeMillis: 300000
+            validationQuery: SELECT 1 FROM DUAL
+            testWhileIdle: true
+            testOnBorrow: false
+            testOnReturn: false
+            poolPreparedStatements: true
+            # 打开PSCache，并且指定每个连接上PSCache的大小
+            maxPoolPreparedStatementPerConnectionSize: 20
+            # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+            # filters: stat,wall,log4j
+            # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+            connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+            # 合并多个DruidDataSource的监控数据
+            useGlobalDataSourceStat: true

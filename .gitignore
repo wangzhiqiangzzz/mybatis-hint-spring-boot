@@ -1,0 +1,15 @@
+# Maven #
+target/
+
+
+# IDEA #
+.idea/
+*.iml
+
+# Eclipse #
+.settings/
+.classpath
+.project
+
+src/test/
+src/main/resources/application-dev.yaml
