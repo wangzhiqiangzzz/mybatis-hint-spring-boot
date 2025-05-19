@@ -13,8 +13,17 @@ public class HintContext {
 
     private static final ThreadLocal<String> hint = ThreadLocal.withInitial(() -> null);
 
+    public static final String HINT_REGEX = "^/\\*.*?\\*/$";
+
+    public static boolean isValidHintFormat(String input) {
+        return input.matches(HINT_REGEX);
+    }
+
     public static void markHint(String s) {
-        hint.set(s);
+
+        if (HintContext.isValidHintFormat(s)){
+            hint.set(s);
+        }
     }
 
     public static boolean isHint() {
