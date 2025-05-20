@@ -50,15 +50,19 @@ public class HintInterceptor implements Interceptor{
                                 boundSql = (BoundSql) args[5];
                         }
 
-                        String originalSql = boundSql.getSql();
-                        String newSql = originalSql.replaceFirst("(?i)SELECT\\s+", "SELECT "+hint+" ");
-                        // 使用MetaObject对象将新的SQL语句设置到BoundSql对象中
-                        MetaObject metaObject = SystemMetaObject.forObject(boundSql);
-                        metaObject.setValue("sql", newSql);
+                        changeSQL(boundSql, hint);
                         return executor.query(ms, parameter, rowBounds, resultHandler, cacheKey, boundSql);
                 }
 
                 return invocation.proceed();
+        }
+
+        private void changeSQL(BoundSql boundSql, String hint) {
+                String originalSql = boundSql.getSql();
+                String newSql = originalSql.replaceFirst("(?i)SELECT\\s+", "SELECT "+ hint +" ");
+                // 使用MetaObject对象将新的SQL语句设置到BoundSql对象中
+                MetaObject metaObject = SystemMetaObject.forObject(boundSql);
+                metaObject.setValue("sql", newSql);
         }
 
         @Override
