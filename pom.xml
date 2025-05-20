@@ -7,7 +7,7 @@
     <groupId>com.github.hint</groupId>
     <artifactId>mybatis-hint-spring-boot</artifactId>
     <packaging>pom</packaging>
-    <version>${revision}</version>
+    <version>${hint.version}</version>
 
     <modules>
         <module>mybatis-hint</module>
@@ -21,7 +21,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <revision>2.1.0</revision>
+        <hint.version>1.0.0</hint.version>
 
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>

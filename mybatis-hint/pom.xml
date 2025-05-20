@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.github.hint</groupId>
         <artifactId>mybatis-hint-spring-boot</artifactId>
-        <version>${revision}</version>
+        <version>${hint.version}</version>
     </parent>
     <artifactId>mybatis-hint</artifactId>
     <name>mybatis-hint</name>
