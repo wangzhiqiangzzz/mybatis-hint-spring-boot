@@ -23,7 +23,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     @Override
     public UserInfoVO getInfoById(Long id) {
 
+        // 强制路由到主库查询
         HintContext.markHint(MysqlEnum.TO_MASTER.getHint());
+        // 执行数据库查询
         User pojo = this.getById(id);
         if (pojo == null) {
             return null;
