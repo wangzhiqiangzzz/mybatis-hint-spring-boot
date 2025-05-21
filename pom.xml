@@ -7,7 +7,7 @@
     <groupId>io.github.wangzhiqiangzzz</groupId>
     <artifactId>mybatis-hint-spring-boot</artifactId>
     <packaging>pom</packaging>
-    <version>${hint.version}</version>
+    <version>1.0.0</version>
     <description>mybatis-hint-spring-boot</description>
     <url>https://github.com/wangzhiqiangzzz/mybatis-hint-spring-boot</url>
 
@@ -19,11 +19,10 @@
     </modules>
 
     <properties>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-
-        <hint.version>1.0.0</hint.version>
 
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
