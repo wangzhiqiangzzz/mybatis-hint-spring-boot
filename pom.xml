@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.hint</groupId>
+    <groupId>io.github.wangzhiqiangzzz</groupId>
     <artifactId>mybatis-hint-spring-boot</artifactId>
     <packaging>pom</packaging>
     <version>${hint.version}</version>
@@ -42,38 +42,6 @@
         <velocity-engine-core.version>2.0</velocity-engine-core.version>
         <freemarker.version>2.3.31</freemarker.version>
     </properties>
-
-
-
-
-    <!--项目地址-->
-<!--    <url>https://gitee.com/xmhzzz/micro-component.git</url>-->
-
-
-    <!--开发者信息-->
-<!--    <developers>-->
-<!--        <developer>-->
-<!--            <id>xmhzzz</id>-->
-<!--            <name>xmhzzz</name>-->
-<!--            <email>994124252@qq.com</email>-->
-<!--            <roles>-->
-<!--                <role>Developer</role>-->
-<!--            </roles>-->
-<!--            <timezone>+8</timezone>-->
-<!--        </developer>-->
-<!--    </developers>-->
-
-<!--    &lt;!&ndash;项目在github或其它托管平台的地址&ndash;&gt;-->
-<!--    <scm>-->
-<!--        <connection>https://gitee.com/xmhzzz/micro-component.git</connection>-->
-<!--        <developerConnection>scm:git:ssh://git@gitee.com:xmhzzz/micro-component.git</developerConnection>-->
-<!--        <url>https://gitee.com/xmhzzz/micro-component/tree/master/</url>-->
-<!--    </scm>-->
-
-
-
-
-
 
     <dependencyManagement>
         <dependencies>
@@ -154,19 +122,19 @@
             </dependency>
 
             <dependency>
-                <groupId>com.github.hint</groupId>
+                <groupId>io.github.wangzhiqiangzzz</groupId>
                 <artifactId>mybatis-hint</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.github.hint</groupId>
+                <groupId>io.github.wangzhiqiangzzz</groupId>
                 <artifactId>mybatis-hint-spring-boot-autoconfigure</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.github.hint</groupId>
+                <groupId>io.github.wangzhiqiangzzz</groupId>
                 <artifactId>mybatis-hint-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -247,6 +215,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>3.2.7</version>
+                <configuration>
+                    <executable>D:\software\gpg\GnuPG\bin\gpg.exe</executable>
+                    <keyname>wangzhiqiangzzz</keyname>
+                </configuration>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>

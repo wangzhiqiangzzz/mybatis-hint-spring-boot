@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.github.hint</groupId>
+        <groupId>io.github.wangzhiqiangzzz</groupId>
         <artifactId>mybatis-hint-spring-boot</artifactId>
         <version>${hint.version}</version>
     </parent>
@@ -21,7 +21,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.hint</groupId>
+            <groupId>io.github.wangzhiqiangzzz</groupId>
             <artifactId>mybatis-hint-spring-boot-starter</artifactId>
         </dependency>
 
