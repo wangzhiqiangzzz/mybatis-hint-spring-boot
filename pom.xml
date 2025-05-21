@@ -13,7 +13,7 @@
         <module>mybatis-hint</module>
         <module>mybatis-hint-spring-boot-autoconfigure</module>
         <module>mybatis-hint-spring-boot-starter</module>
-        <module>mybatis-hint-examples</module>
+<!--        <module>mybatis-hint-examples</module>-->
     </modules>
 
     <properties>
@@ -253,8 +253,13 @@
 
     <developers>
         <developer>
+            <id>central</id>
             <name>wangzhiqiangzzz</name>
             <email>wangzhiqiangzzz@163.com</email>
+            <roles>
+                <role>Project Manager</role>
+                <role>Architect</role>
+            </roles>
         </developer>
     </developers>
 
