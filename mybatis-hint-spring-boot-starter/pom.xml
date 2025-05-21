@@ -9,6 +9,8 @@
 
     <artifactId>mybatis-hint-spring-boot-starter</artifactId>
     <name>mybatis-hint-spring-boot-starter</name>
+    <description>mybatis-hint-spring-boot-starter</description>
+    <url>https://github.com/wangzhiqiangzzz/mybatis-hint-spring-boot/tree/master/mybatis-hint-spring-boot-starter</url>
 
     <dependencies>
         <dependency>

@@ -8,6 +8,8 @@
     <artifactId>mybatis-hint-spring-boot</artifactId>
     <packaging>pom</packaging>
     <version>${hint.version}</version>
+    <description>mybatis-hint-spring-boot</description>
+    <url>https://github.com/wangzhiqiangzzz/mybatis-hint-spring-boot</url>
 
     <modules>
         <module>mybatis-hint</module>

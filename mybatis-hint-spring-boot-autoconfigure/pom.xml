@@ -9,6 +9,8 @@
   </parent>
   <artifactId>mybatis-hint-spring-boot-autoconfigure</artifactId>
   <name>mybatis-hint-spring-boot-autoconfigure</name>
+  <description>mybatis-hint-spring-boot-autoconfigure</description>
+  <url>https://github.com/wangzhiqiangzzz/mybatis-hint-spring-boot/tree/master/mybatis-hint-spring-boot-autoconfigure</url>
 
   <dependencies>
     <dependency>

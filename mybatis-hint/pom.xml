@@ -8,6 +8,8 @@
     </parent>
     <artifactId>mybatis-hint</artifactId>
     <name>mybatis-hint</name>
+    <description>mybatis-hint</description>
+    <url>https://github.com/wangzhiqiangzzz/mybatis-hint-spring-boot/tree/master/mybatis-hint</url>
 
     <dependencies>
         <dependency>
