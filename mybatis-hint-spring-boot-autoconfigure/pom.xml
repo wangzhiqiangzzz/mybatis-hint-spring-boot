@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.github.wangzhiqiangzzz</groupId>
     <artifactId>mybatis-hint-spring-boot</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </parent>
   <artifactId>mybatis-hint-spring-boot-autoconfigure</artifactId>
   <name>mybatis-hint-spring-boot-autoconfigure</name>
